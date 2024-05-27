@@ -1,3 +1,6 @@
+//Este script usa la función "showSection" carga y muestra el contenido de diferentes secciones 
+//en el área principal de la página (content1) al hacer clic en un botón del menú,
+//permitiendo la navegación por distintas secciones del sitio web desde la barra lateral.
 function showSection(sectionId) {
     fetch(sectionId + '.html')
         .then(response => response.text())

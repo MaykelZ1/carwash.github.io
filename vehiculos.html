@@ -9,18 +9,5 @@
     <div id="sidebar-container"></div>
     <div class="content1" id="content1">
         <h1>Acá van los vehículos</h1>
-    </div>
-    <script src="script.js"></script>
-    <script>
-        // Cargar el contenido de sidebar.html
-        fetch('sidebar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('sidebar-container').innerHTML = data;
-                // Cargar la sección inicial 'index'
-                showSection('index');
-            })
-            .catch(error => console.error('Error al cargar la barra lateral:', error));
-    </script>
 </body>
 </html>

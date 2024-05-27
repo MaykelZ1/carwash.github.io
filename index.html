@@ -9,7 +9,7 @@
 <body>
     <div id="sidebar-container"></div>
     <div class="content1" id="content1">
-        <!-- El contenido dinámico inicial se cargará aquí -->
+        <!-- El contenido dinámico inicial se cargará acá -->
         <div class="hero">
     <h1>Bienvenido a CarWash</h1>
     <p>El mejor lugar para el cuidado y mantenimiento de tu vehículo.</p>
@@ -31,9 +31,9 @@
 </div>
 
     </div>
+    <!--Cargar el contenido de sidebar.html-->
     <script src="script.js"></script>
     <script>
-        // Cargar el contenido de sidebar.html
         fetch('sidebar.html')
             .then(response => response.text())
             .then(data => {
@@ -41,7 +41,6 @@
                 // Cargar la sección inicial 'index'
                 showSection('index');
             })
-            .catch(error => console.error('Error al cargar la barra lateral:', error));
     </script>
 </body>
 </html>
